@@ -56,10 +56,10 @@ const Wrapper = styled.div`
 `;
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
   const init = async () => {
     await auth.authStateReady();
-    setIsLoading(false);
+    setLoading(false);
   }
   useEffect(() => { init(); }, []);
   return (
