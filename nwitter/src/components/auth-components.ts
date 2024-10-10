@@ -41,3 +41,9 @@ export const Switcher = styled.span`
         color: #1d9bf0;
     }
 `
+export const Button = styled.span`
+    margin-top: 20px;
+    color: #1d9bf0;
+    text-decoration: underline;
+    cursor: pointer;
+`
