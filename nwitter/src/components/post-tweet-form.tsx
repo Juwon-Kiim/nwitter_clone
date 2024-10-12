@@ -68,6 +68,10 @@ export default function PostTweetForm() {
     const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { files } = e.target;
         if (files && files.length === 1) {
+            if (files[0].size > 1024 * 1024) {
+                alert("Too large to tweet");
+                return;
+            }
             setFile(files[0]);
         }
     }
