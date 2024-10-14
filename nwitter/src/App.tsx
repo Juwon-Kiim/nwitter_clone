@@ -53,6 +53,9 @@ const GlobalStyles = createGlobalStyle`
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
   }
+  ::-webkit-scrollbar{
+    display: none;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -72,7 +75,6 @@ function App() {
     <Wrapper>
       <GlobalStyles />
       {isLoading ? <LoadingScreen /> : <RouterProvider router={router} /> }
-      <RouterProvider router={router} />
     </Wrapper>
   )
 }

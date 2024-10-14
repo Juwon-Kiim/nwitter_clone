@@ -32,7 +32,7 @@ export const Input = styled.input`
     }}
 `;
 export const Error = styled.span`
-    font-weight;
+    font-weight: 600;
     color: tomato;
 `
 export const Switcher = styled.span`

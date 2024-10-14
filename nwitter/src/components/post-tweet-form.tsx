@@ -20,7 +20,7 @@ const TextArea = styled.textarea`
     resize: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        snas-serif;
+        sans-serif;
     &::placeholder {
         font-size: 16px;
     }
@@ -84,7 +84,7 @@ export default function PostTweetForm() {
             setLoading(true);
             const doc = await addDoc(collection(db, "tweets"), {
                 tweet,
-                creaetdAt: Date.now(),
+                createdAt: Date.now(),
                 username: user.displayName || "Anonymous",
                 userId: user.uid,
             });
